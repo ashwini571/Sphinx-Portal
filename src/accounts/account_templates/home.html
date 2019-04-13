@@ -130,160 +130,101 @@
 	transition-delay: 0.2s;
 }
 </style>
+<style>
+body{
+<!--background-color: #ffffff;-->
+<!--background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");-->
 
+<!--background-color: #ebebeb;-->
+<!--background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");-->
+
+
+background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");
+	background-attachment: fixed;
+}
+.btn-huge{
+    padding-top:40px;
+    padding-bottom:60px;
+
+}
+.head{
+  text-align: left;
+  padding-top: 5px;
+  font-size:1.8rem;
+  font-family: 'Monoton', cursive;
+  color: #f5f6fa"
+}
+  .fplink
+    {
+        margin: 10px;
+        text-align: right;
+    }
+    .no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.loader{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url({% static 'Loading.gif'%}) center no-repeat #fff;
+}
+</style>
 
 {% endblock %}
 {% block body %}
-<br>
-<div class=" row ">
-<div class="col-6 animated fadeInLeft" style="background-color: #1EAFE7; font-family:'Old English Text MT'; border-radius:8px; animation-duration:2s;">
-    <div class="row">
-        <div class="col-6 justify-content-center pt-5">
-        <img src="{% static 'sphinx.svg' %}" class="image img-fluid figure-img">
-    </div>
-    <div class="col-6">
-        <center>
-   <h1 style="font-family:Showcard Gothic; text-shadow:2px 2px 8px #black; color: white;">S<br><br>P<br><br>H<br><br>I<br><br>N<br><br>X </h1>
-   </center>
-    </div>
-    </div>
-</div>
- <div class="col-1"   >
 
 
 
+        <div class="row justify-content-center" style="text-align: center;padding-top: 100px ;margin:23px;">
+            <h1  style="font-size: 70px;font-family:'Barrio', cursive; margin">Welcome to QuizOholic</h1>
 
- </div>
 
-<div class="col-4 animated fadeInRight p-5" style="animation-duration:2s;"> 
+        </div>
+    <div class="row justify-content-center" style="margin:23px;"><h2 style="font-family:sarpanch;" class="text-muted" ><br>A Quizzing Platform To Hone Your Skills</h2></div>
 
-      <font style="font-size:23px; font-family:'Comic Sans MS';">  Hola a todos !!<br>
 
-        Sphinx, the mythical creature is back with another exciting edition !!
+        <div class="row" style="text-align: center;padding-top: 70px">
+           <div class="col-md justify-content-center" >
+ <button type="submit" class="btn btn-default btn-hover color-10" onclick="window.location.href='#'" >Get started</button>
+        </div>
+            <br>
 
-        Get ready for a fun-filled ride in this amazing voyage to the world of puzzles where your mind will be refreshed. Take up a quiz or CREATE ONE OF YOUR OWN!!
-
-        Let the quest for the throne begin.👑</font>
-        
-
-</div>
-</div>
-    <hr>
-<br>
-<br>
-<br>
+        </div>
     <br>
-<div class="row justify-content-between" style="visibility: hidden;">
-<div class="col-1">
-    &nbsp;
-</div>
-<div class="col-2" style="background-color:#1EAFE7; border-radius:8px">
-<font style="color:white; font-size:36px; background-color:#1EAFE7; font-family:Comic Sans MS; border-radius:8px">Why should you make a quiz?</font>
-</div>
-<div class="col-1">
-    &nbsp;
-</div>
-<div class="col-5 text-muted teal-ic">
+    <br>
+                <hr class="style-five">
 
-
-<font style="font-family:Lucida Sans; font-size:20px">One word: growth. Personal or professional growth—teachers or trainers helping people with new knowledge and skills.
-
-An online quiz maker is a useful tool for facilitating both kinds of growth.
-
-Teachers and trainers can create a quiz to make lessons more interactive and engaging. It’s been researched and proven that regular quizzes—boost memory retention, drive engagement, and make learning fun. More on this in a bit.</font>
-</div>
-</div>
-<br>
-<br><br><br>
-<div class="row justify-content-start" style="visibility: hidden;">
-    <div class="col-1">
-        &nbsp;
-    </div>
-    <div class="col-5 text-muted teal-ic">
-    <font style="font-family:Lucida Sans; font-size:20px">Besides quizzes can be conducted for different age groups and over varying cultures, quizzes improve or expanding one’s knowledge of things, either general or in specific area.
-    Quizzes are designed to promote, a fun way to study and in the process help improve one’s general knowledge.
-    Quiz competitions enables students to think from different angles or simply ‘to think out of the box’<br><br>So Start EXPLORING and Get Yourself STARTED</font>
-    </div>
-    <div class="col-1">
-        &nbsp;
-    </div>
-    <div class="col-2" style="background-color:#1EAFE7; border-radius:8px">
-    <font style="color:white; font-size:36px; background-color:#1EAFE7; font-family:Comic Sans MS; border-radius:8px">Why should you take a quiz?</font>
-    </div>
-
-</div>
-<br>
-<br>
-<br>
-<hr>
-<br>
-<br>
-<center>
-<div class="col-11 p-5" style="border-style:double; border-color:#1EAFE7; border-radius:8px">
-<center><h2 style="font-family:'Copperplate Gothic Light'">OUR TEAM</h2></center>
-<div class="row">
-
-<div class="col-4">
-    <div class="hovereffect">
-        <img class="img-responsive img-fluid img-thumbnail" src="{% static 'user.png' %}" alt="" height="250" width="250">
-            <div class="overlay row justify-content-start">
-                <h2>ASHWINI OJHA</h2>
-                <p class="icon-links col-4">
-                    <a href="#">
-                        <span class="fa fa-twitter"></span>
-                    </a>
-                    <a href="#">
-                        <span class="fa fa-facebook"></span>
-                    </a>
-                    <a href="#">
-                        <span class="fa fa-instagram"></span>
-                    </a>
-                </p>
+        <div class="row" style="padding-top: 130px;padding-left: 100px">
+            <p class="tab retroshadow" style="font-size: 50px;font-weight:600;color:#273c75;line-height: 1.8">AN INVESTMENT IN KNOWLEDGE PAYS THE
+                <br>BEST  &nbsp;<span style="color: #eb2f06">INTEREST</span></p>
+        </div>
+        <div class="row" style="height: 200px;margin-top: 80px;margin-left: 30px">
+            <div class="col-md-6 rounded shadow-lg headshot headshot-1" style="background-color: #0c2461;padding-top: 50px;padding-left: 30px;border-style: dashed;border-color: white;border-width: thick">
+                <p class="tab" style="font-size: 20px;font-weight: 400; color: white;line-height: 1.8">L E T' S  &nbsp;&nbsp; &nbsp;J U S T  &nbsp;&nbsp; &nbsp; C O M E &nbsp; &nbsp; A N D &nbsp; S H O W <br> O F F &nbsp; Y O U R &nbsp; S K I L L S</p>
             </div>
-    </div>
-</div>
-<div class="col-4">
-    <div class="hovereffect">
-        <img class="img-responsive img-fluid img-thumbnail" src="{% static 'user.png' %}" alt="" height="250" width="250">
-            <div class="overlay row justify-content-start">
-                <h2>ROHIT RAJ ANAND</h2>
-                <p class="icon-links">
-                    <a href="#">
-                        <span class="fa fa-twitter"></span>
-                    </a>
-                    <a href="#">
-                        <span class="fa fa-facebook"></span>
-                    </a>
-                    <a href="#">
-                        <span class="fa fa-instagram"></span>
-                    </a>
-                </p>
+        </div>
+    <br>
+    <br>
+                        <hr class="style-two">
+        <div class="row" style="padding-top: 130px;padding-left: 200px;text-align: right">
+            <p class="tab hit-the-floor" style="font-size: 50px;font-weight:600;color:#273c75;line-height: 1.8">K N O W -&nbsp; I T - <span style="color: #eb2f06">A L L ? ? ?</span></p>
+        </div>
+        <div class="row" style="height: 200px;margin-top: 80px;margin-left: 30pxs;max-width: 100">
+            <div class="col-md-6 rounded shadow-lg headshot headshot-1" style="background-color: #0c2461;padding-top: 50px;padding-left: 30px;margin-left: 500px;border-style: dashed;border-color: white;border-width: thick;">
+                <p class="tab" style="font-size: 20px;font-weight: 400; color: white;line-height: 1.8;text-shadow: 2px">B E C O M E &nbsp; A &nbsp; Q U I Z &nbsp; M A S T E R &nbsp; A N D <br> H E L P &nbsp; O T H E R S &nbsp; T O &nbsp; E N H A N C E &nbsp; T H E I R &nbsp;<br> S K I L L S</p>
             </div>
-    </div>
-</div>
-<div class="col-4">
-    <div class="hovereffect">
-        <img class="img-responsive img-fluid img-thumbnail" src="{% static 'user.png' %}" alt="" height="250" width="250">
-            <div class="overlay row justify-content-start">
-                <h2>SHEETAL SINGH</h2>
-                <p class="icon-links">
-                    <a href="#">
-                        <span class="fa fa-twitter"></span>
-                    </a>
-                    <a href="#">
-                        <span class="fa fa-facebook"></span>
-                    </a>
-                    <a href="#">
-                        <span class="fa fa-instagram"></span>
-                    </a>
-                </p>
-            </div>
-    </div>
-</div>
+        </div>
 
 
 
-</div>
+<div>
+
+
+
+
 </center>
 <br>
 <br>
