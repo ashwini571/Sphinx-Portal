@@ -65,8 +65,7 @@ color:#5D595D  ;"> <u>{{ quiz_object.quiz_name }}</u></h2>
     <form class="form-signin" method="POST" action="{% url 'quiz_auth' quizid=quiz_object.quiz_id %}">
         {% csrf_token %}
         <div class="text-center">
-              {{ today.time }}
-            {{ quiz_object.duration }}
+
 
             <h1 class="h3 mb-3 font-weight-normal">Let's Start</h1>
         </div>

@@ -5,6 +5,8 @@
 {% block custom_css %}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Cute+Font|Faster+One|Sarpanch" rel="stylesheet">
 <style>
 .hovereffect {
     width: 100%;
@@ -179,7 +181,7 @@ background-image: url("https://www.transparenttextures.com/patterns/crissxcross.
 
 
         <div class="row justify-content-center" style="text-align: center;padding-top: 100px ;margin:23px;">
-            <h1  style="font-size: 70px;font-family:'Barrio', cursive; margin">Welcome to QuizOholic</h1>
+            <h1  style="font-size: 70px;font-family:'Barrio', cursive; margin">Welcome to Sphinx-Portal</h1>
 
 
         </div>
@@ -188,7 +190,7 @@ background-image: url("https://www.transparenttextures.com/patterns/crissxcross.
 
         <div class="row" style="text-align: center;padding-top: 70px">
            <div class="col-md justify-content-center" >
- <button type="submit" class="btn btn-default btn-hover color-10" onclick="window.location.href='#'" >Get started</button>
+ <button type="submit" class="btn btn-default btn-hover color-10" onclick="window.location.href='{% url 'register' %}'" >Get started</button>
         </div>
             <br>
 
