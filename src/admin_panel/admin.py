@@ -21,7 +21,7 @@ class AnswerAdmin(admin.ModelAdmin):
     list_filter = ('sheet', 'is_attempted', 'is_graded')
     fieldsets = (
         (None, {'fields': ('sheet', 'question', 'marks_awarded', 'is_attempted', 'is_graded')}),
-        ('Time', {'fields': ('start_time', 'end_time')}),
+        ('Time', {'fields': ('response_time',)}),
         ('If Subjective', {'fields': ('subjective_answer', )}),
         ('If Objective', {'fields': ('response_A', 'response_B', 'response_C', 'response_D')}),
     )

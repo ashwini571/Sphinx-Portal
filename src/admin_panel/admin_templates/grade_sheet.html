@@ -180,6 +180,7 @@
 
         {% endfor %}
         </div>
+                <div id="snackbar" style="display:none;">Question graded successfully!</div>
 
     <hr>
         <p class="text-center">
@@ -194,6 +195,11 @@
     </script>
 
     <script>
+    function snackBar() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
         // Script for AJAX submission
         {% for obj in answers %}
             // Event listeners for every form
@@ -226,8 +232,9 @@
                         // Anything Before sending data can be done here
                     },
                     success: function () {
-
-                      $("answer_"+ answer_id).remove();
+                         snackBar();
+                      $("#answer_"+ answer_id).remove();
+                      
                       console.log("Submitted Successfully!");
 
                     }
